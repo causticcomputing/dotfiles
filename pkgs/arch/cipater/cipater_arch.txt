@@ -16,6 +16,7 @@ cockpit-packagekit
 cockpit-podman
 cockpit-storaged
 cowsay
+discord
 dnsmasq
 docker
 docker-compose
@@ -29,6 +30,7 @@ foliate
 font-manager
 fooyin
 fortune-mod
+freerdp
 gamescope
 glow
 gnu-free-fonts
@@ -36,6 +38,7 @@ handbrake
 hyfetch
 kdenlive
 keepassxc
+krdc
 lazygit
 libosinfo
 libreoffice-fresh
@@ -57,6 +60,7 @@ obs-studio
 obsidian
 okular
 otf-latin-modern
+pacman-contrib
 papirus-icon-theme
 picard
 prismlauncher
@@ -67,6 +71,7 @@ qemu-full
 qemu-img
 ranger
 readest
+remmina
 retroarch
 retroarch-assets-ozone
 retroarch-assets-xmb
@@ -98,6 +103,7 @@ tuned
 virt-install
 virt-manager
 virt-viewer
+vivaldi
 vkd3d
 vlc
 vlc-plugins-all
@@ -108,3 +114,4 @@ wireshark-qt
 xmrig
 yasm
 yt-dlp
+zenmap
