@@ -6,6 +6,7 @@ dupeguru
 electronmail-bin
 ferdium-bin
 fluffychat-bin
+gnome-shell-extension-gsconnect
 gns3-gui
 gns3-server
 heroic-games-launcher-bin
