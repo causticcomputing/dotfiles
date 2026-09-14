@@ -60,6 +60,7 @@ nicotine+
 obs-studio
 obsidian
 okular
+openrgb
 otf-latin-modern
 pacman-contrib
 papirus-icon-theme
