@@ -154,6 +154,7 @@ sl
 smartmontools
 sof-firmware
 solaar
+solanum
 steam
 stellarium
 strace
