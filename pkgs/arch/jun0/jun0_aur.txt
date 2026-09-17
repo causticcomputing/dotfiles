@@ -2,6 +2,7 @@ arttime-git
 bottles
 brave-bin
 cbonsai
+clock-tui
 dupeguru
 electronmail-bin
 ferdium-bin
