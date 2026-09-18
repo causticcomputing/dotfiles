@@ -32,6 +32,7 @@ fooyin
 fortune-mod
 fprintd
 freerdp
+fzf
 gamescope
 glow
 gnu-free-fonts
