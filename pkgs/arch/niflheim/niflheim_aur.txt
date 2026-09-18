@@ -1,6 +1,5 @@
 arttime-git
 bottles
-brave-bin
 cbonsai
 dupeguru
 electronmail-bin
