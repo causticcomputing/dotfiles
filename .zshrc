@@ -4,7 +4,6 @@
 # Z shell configuration file
 # created <2026-09-21> :: last modified <2026-09-21T09:54-06:00>
 #
-# see /usr/share/doc/zsh/examples/zshrc for examples
 # --- BEGIN CONFIGURATION FILE ---
 
 # :: shell options ::
