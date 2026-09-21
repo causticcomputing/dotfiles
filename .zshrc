@@ -28,9 +28,9 @@ setopt hist_verify
 
 # :: PATH ::
 typeset -U path
-export PATH="$PATH:$HOME/.local/bin"
-export PATH=$PATH:/usr/games
-export PATH="$PATH:$HOME/.config/emacs/bin"
+path+=("$HOME/.local/bin")
+[[ -d /usr/games ]] && path+=(/usr/games)
+path+=("$HOME/.config/emacs/bin")
 
 # :: editor ::
 export EDITOR=nvim
