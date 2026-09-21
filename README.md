@@ -29,10 +29,6 @@ It remains my shell of choice for its completion, theming, and more advanced fun
 ┌[user ◆ hostname]-(~)
 └>
 ```
-```
-``` 
-``` 
-```
 
 - `.zshrc`: My personal, main Z shell configuration
 - `.aliases.zsh`: Loaded by `.zshrc`, aliases for a better, faster shell workflow.
