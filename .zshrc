@@ -2,7 +2,7 @@
 # ~/.zshrc 
 # host: $HOSTNAME
 # Z shell configuration file
-# created <2026-09-21> :: last modified <2026-09-21T09:54-06:00>
+# created <2026-09-21> :: last modified <2026-09-21T10:32-06:00>
 #
 # --- BEGIN CONFIGURATION FILE ---
 
@@ -68,33 +68,37 @@ bindkey "^[[1;3C" forward-word    # Alt + -->
 bindkey "^[[1;5D" backward-word   # Ctrl + <--
 bindkey "^[[1;5C" forward-word    # Ctrl + -->
 
-# :: prompt style & theme ::
-PROMPT='%F{cyan}┌[%B%F{white}%n%b%f%F{cyan} ◆ %B%F{white}%M%b%f%F{cyan}]%F{white}-%F{cyan}(%B%F{white}%~%b%f%F{cyan})$(git_prompt_info)
-└> % %f'
-
 # :: git prompt ::
+autoload -Uz vcs_info add-zsh-hook
+add-zsh-hook precmd vcs_info
+
 ZSH_THEME_GIT_PROMPT_PREFIX="-%F{white}git://%B%F{white}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%b%f%F{cyan}-"
 ZSH_THEME_GIT_PROMPT_DIRTY=" %F{red}✗%f"
 ZSH_THEME_GIT_PROMPT_CLEAN=" %F{green}✔%f"
 
-git_prompt_info() 
+zstyle ':vcs_info:*'                   enable git
+zstyle ':vcs_info:git:*'               check-for-changes true
+zstyle ':vcs_info:git:*'               formats '%b%m'
+zstyle ':vcs_info:git:*'               actionformats '%b|%a%m'
+zstyle ':vcs_info:git*+set-message:*'  hooks git-dirty
+
+# escape branch (CVE-2021-45444); untracked files count as dirty
++vi-git-dirty()
 {
-  git rev-parse --is-inside-work-tree &>/dev/null || return
+  hook_com[branch]=${hook_com[branch]//\%/%%}
 
-  local branch dirty
-  branch=$(git symbolic-ref --quiet --short HEAD 2>/dev/null \
-           || git describe --tags --exact-match 2>/dev/null \
-           || git rev-parse --short HEAD 2>/dev/null)
-
-  if [[ -n "$(git status --porcelain 2>/dev/null)" ]]; then
-    dirty="$ZSH_THEME_GIT_PROMPT_DIRTY"
+  if [[ -n ${hook_com[staged]}${hook_com[unstaged]} ]] ||
+     [[ -n $(GIT_OPTIONAL_LOCKS=0 git ls-files --others --exclude-standard 2>/dev/null) ]]; then
+    hook_com[misc]=$ZSH_THEME_GIT_PROMPT_DIRTY
   else
-    dirty="$ZSH_THEME_GIT_PROMPT_CLEAN"
+    hook_com[misc]=$ZSH_THEME_GIT_PROMPT_CLEAN
   fi
-
-  echo "${ZSH_THEME_GIT_PROMPT_PREFIX}${branch}${dirty}${ZSH_THEME_GIT_PROMPT_SUFFIX}"
 }
+
+# :: zsh prompt ::
+PROMPT='%F{cyan}┌[%B%F{white}%n%b%f%F{cyan} ◆ %B%F{white}%M%b%f%F{cyan}]%F{white}-%F{cyan}(%B%F{white}%~%b%f%F{cyan})${vcs_info_msg_0_:+${ZSH_THEME_GIT_PROMPT_PREFIX}${vcs_info_msg_0_}${ZSH_THEME_GIT_PROMPT_SUFFIX}}
+└> % %f'
 
 # :: syntax highlighting styles ::
 ZSH_HIGHLIGHT_HIGHLIGHTERS+=(main brackets pattern cursor root)
