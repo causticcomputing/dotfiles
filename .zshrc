@@ -32,6 +32,10 @@ export PATH="$PATH:$HOME/.local/bin"
 export PATH=$PATH:/usr/games
 export PATH="$PATH:$HOME/.config/emacs/bin"
 
+# :: editor ::
+export EDITOR=nvim
+export VISUAL=nvim
+
 # :: aliases ::
 if [[ -f "$HOME/.aliases.zsh" ]]; then
   source "$HOME/.aliases.zsh"
