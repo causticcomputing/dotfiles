@@ -1,8 +1,13 @@
-# :: a c i d c o m p u t i n g :: 
-# ~/.zshrc file for zsh interactive shells
+# :: c a u s t i c  c o m p u t i n g ::
+# ~/.zshrc 
+# host: $HOSTNAME
+# Z shell configuration file
+# created <2026-09-21> :: last modified <2026-09-21T09:54-06:00>
+#
 # see /usr/share/doc/zsh/examples/zshrc for examples
+# --- BEGIN CONFIGURATION FILE ---
 
-# --- shell options ---
+# :: shell options ::
 setopt autocd              # change directory just by typing its name
 setopt interactivecomments # allow comments in interactive mode
 setopt magicequalsubst     # enable filename expansion for arguments of the form 'anything=expression'
@@ -12,7 +17,7 @@ setopt numericglobsort     # sort filenames numerically when it makes sense
 setopt promptsubst         # enable command substitution in prompt
 setopt extendedglob        # enable extended globbing 
 
-# --- history ---
+# :: history ::
 HISTFILE=$HOME/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
@@ -22,21 +27,21 @@ setopt hist_ignore_all_dups
 setopt hist_reduce_blanks
 setopt hist_verify
 
-# --- PATH ---
+# :: PATH ::
 export PATH="$PATH:$HOME/.local/bin"
 export PATH=$PATH:/usr/games
 export PATH="$PATH:$HOME/.config/emacs/bin"
 
-# --- aliases ---
+# :: aliases ::
 if [[ -f "$HOME/.aliases.zsh" ]]; then
   source "$HOME/.aliases.zsh"
 fi
 
-# --- ls colors ---
+# :: ls colors ::
 alias ls='ls --color=auto'
 eval "$(dircolors -b)"
 
-# --- zsh tab completion ---
+# :: zsh tab completion ::
 # thanks to 'ctechtools' on GitHub for the speedup
 # only check the dump once a day
 autoload -Uz compinit
@@ -46,24 +51,24 @@ else
   compinit -C
 fi
 
-# menu selection & colored completions
+# :: menu selection & colored completions ::
 zstyle ':completion:*' rehash true
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 zstyle ':completion:*' menu select=1
 zstyle ':completion:*:descriptions' format '%B%d%b'
 
-# --- key bindings ---
+# :: key bindings ::
 # word navigation
 bindkey "^[[1;3D" backward-word   # Alt + <--
 bindkey "^[[1;3C" forward-word    # Alt + -->
 bindkey "^[[1;5D" backward-word   # Ctrl + <--
 bindkey "^[[1;5C" forward-word    # Ctrl + -->
 
-# --- prompt style/theme ---
+# :: prompt style & theme ::
 PROMPT='%F{cyan}┌[%B%F{white}%n%b%f%F{cyan} ◆ %B%F{white}%M%b%f%F{cyan}]%F{white}-%F{cyan}(%B%F{white}%~%b%f%F{cyan})$(git_prompt_info)
 └> % %f'
 
-# --- git prompt ---
+# :: git prompt ::
 ZSH_THEME_GIT_PROMPT_PREFIX="-%F{white}git://%B%F{white}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%b%f%F{cyan}-"
 ZSH_THEME_GIT_PROMPT_DIRTY=" %F{red}✗%f"
@@ -87,7 +92,7 @@ git_prompt_info()
   echo "${ZSH_THEME_GIT_PROMPT_PREFIX}${branch}${dirty}${ZSH_THEME_GIT_PROMPT_SUFFIX}"
 }
 
-# --- syntax highlighting styles ---
+# :: syntax highlighting styles ::
 ZSH_HIGHLIGHT_HIGHLIGHTERS+=(main brackets pattern cursor root)
 typeset -A ZSH_HIGHLIGHT_STYLES
 ZSH_HIGHLIGHT_STYLES[alias]=fg=51
@@ -116,7 +121,7 @@ ZSH_HIGHLIGHT_STYLES[back-quoted-argument]=fg=207
 ZSH_HIGHLIGHT_STYLES[back-quoted-argument-delimiter]=fg=93,underline
 ZSH_HIGHLIGHT_STYLES[named-fd]=fg=99,bold
 
-# --- plugins ---
+# :: plugins ::
 # detect plugin directories
 if [[ -d /usr/share/zsh/plugins ]]; then
   ZSH_PLUGIN_DIR=/usr/share/zsh/plugins
@@ -124,12 +129,12 @@ else
   ZSH_PLUGIN_DIR=/usr/share
 fi
 
-# autosuggestions
+# :: autosuggestions ::
 if [[ -f $ZSH_PLUGIN_DIR/zsh-autosuggestions/zsh-autosuggestions.zsh ]]; then
   source $ZSH_PLUGIN_DIR/zsh-autosuggestions/zsh-autosuggestions.zsh
 fi
 
-# syntax highlighting (keep last or highlighting won't work!)
+# :: syntax highlighting (keep last or highlighting won't work!) ::
 if [[ -f $ZSH_PLUGIN_DIR/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]]; then
   source $ZSH_PLUGIN_DIR/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 fi
