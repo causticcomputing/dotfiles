@@ -28,6 +28,7 @@ setopt hist_reduce_blanks
 setopt hist_verify
 
 # :: PATH ::
+typeset -U path
 export PATH="$PATH:$HOME/.local/bin"
 export PATH=$PATH:/usr/games
 export PATH="$PATH:$HOME/.config/emacs/bin"
