@@ -104,6 +104,7 @@ ttf-ibm-plex
 ttf-iosevka-nerd
 ttf-roboto
 tuned
+vi
 virt-install
 virt-manager
 virt-viewer
