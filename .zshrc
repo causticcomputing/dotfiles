@@ -62,6 +62,8 @@ zstyle ':completion:*' menu select=1
 zstyle ':completion:*:descriptions' format '%B%d%b'
 
 # :: key bindings ::
+# emacs mode
+bindkey -e
 # word navigation
 bindkey "^[[1;3D" backward-word   # Alt + <--
 bindkey "^[[1;3C" forward-word    # Alt + -->
