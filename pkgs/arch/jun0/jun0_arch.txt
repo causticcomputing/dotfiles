@@ -3,6 +3,7 @@ adobe-source-sans-fonts
 adobe-source-serif-fonts
 alsa-utils
 amd-ucode
+android-udev
 arp-scan
 asciiquarium
 audacious
