@@ -2,7 +2,7 @@
 # ~/.zshrc 
 # host: $HOSTNAME
 # Z shell configuration file
-# created <2026-09-21> :: last modified <2026-09-21T10:32-06:00>
+# created <2026-09-21> :: last modified <2026-09-24T14:00-06:00>
 #
 # --- BEGIN CONFIGURATION FILE ---
 
@@ -65,10 +65,10 @@ zstyle ':completion:*:descriptions' format '%B%d%b'
 # emacs mode
 bindkey -e
 # word navigation
-bindkey "^[[1;3D" backward-word   # Alt + <--
-bindkey "^[[1;3C" forward-word    # Alt + -->
-bindkey "^[[1;5D" backward-word   # Ctrl + <--
-bindkey "^[[1;5C" forward-word    # Ctrl + -->
+bindkey "^[[1;3D" backward-word   # Alt + <-
+bindkey "^[[1;3C" forward-word    # Alt + ->
+bindkey "^[[1;5D" backward-word   # Ctrl + <-
+bindkey "^[[1;5C" forward-word    # Ctrl + ->
 
 # :: git prompt ::
 autoload -Uz vcs_info add-zsh-hook
