@@ -1,6 +1,12 @@
 ;;; init.el -*- lexical-binding: t; -*-
-;; :: a c i d c o m p u t i n g
-;; ~/.config/doom/init.el
+
+;; :: c a u s t i c  c o m p u t i n g ::
+;; ~/.config/doom/init.el 
+;; host: $HOSTNAME
+;; DOOM Emacs init configuration file
+;; created <2026-09-25> :: last modified <2026-09-25T14:37-06:00>
+;;
+;; --- BEGIN CONFIGURATION FILE ---
 
 ;; This file controls what Doom modules are enabled and what order they load
 ;; in. Remember to run 'doom sync' after modifying it!
@@ -198,3 +204,5 @@
        :config
        ;;literate
        (default +bindings +smartparens))
+
+;; --- END CONFIGURATION FILE ---
