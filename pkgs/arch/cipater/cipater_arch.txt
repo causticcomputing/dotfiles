@@ -50,6 +50,7 @@ luanti
 macchanger
 macchina
 mangohud
+mixxx
 mkvtoolnix-gui
 mpd
 mupdf
