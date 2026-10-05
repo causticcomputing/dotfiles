@@ -1,5 +1,4 @@
 adobe-source-sans-fonts
-adobe-source-sans-fonts
 asciiquarium
 audacious
 audacity
