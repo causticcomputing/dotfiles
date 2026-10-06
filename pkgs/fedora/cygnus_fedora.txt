@@ -1,0 +1,9 @@
+btop
+fastfetch
+git
+htop
+kitty
+nvim
+zsh
+zsh-autosuggestions
+zsh-syntax-highlighting
