@@ -79,6 +79,7 @@ scrcpy
 signal-desktop
 sl
 solaar
+solanum
 steam
 stellarium
 strawberry
