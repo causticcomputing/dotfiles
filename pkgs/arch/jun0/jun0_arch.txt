@@ -29,6 +29,7 @@ cockpit-storaged
 cowsay
 cups
 dnsmasq
+discord
 docker
 docker-compose
 dosfstools
