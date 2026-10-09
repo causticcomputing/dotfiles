@@ -119,6 +119,7 @@ obsidian
 okular
 ollama
 openbsd-netcat
+openrgb
 openssh
 os-prober
 otf-latin-modern
