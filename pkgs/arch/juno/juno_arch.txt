@@ -46,6 +46,7 @@ fd
 ffmpeg
 ffmpegthumbnailer
 firefox
+firewalld
 flatseal
 foliate
 font-manager
