@@ -3,6 +3,7 @@ emacs
 fastfetch
 htop
 neovim
+s-tui
 tmux
 zsh
 zsh-autosuggestions
