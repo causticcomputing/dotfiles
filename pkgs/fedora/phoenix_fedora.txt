@@ -1,2 +1,5 @@
 btop
 emacs
+zsh
+zsh-autosuggestions
+zsh-syntax-highlighting
