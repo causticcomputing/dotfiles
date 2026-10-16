@@ -1,6 +1,7 @@
 btop
 emacs
 fastfetch
+htop
 neovim
 tmux
 zsh
