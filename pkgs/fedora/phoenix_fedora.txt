@@ -2,6 +2,7 @@ btop
 emacs
 fastfetch
 neovim
+tmux
 zsh
 zsh-autosuggestions
 zsh-syntax-highlighting
