@@ -1,5 +1,6 @@
 btop
 emacs
+fastfetch
 neovim
 zsh
 zsh-autosuggestions
