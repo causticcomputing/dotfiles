@@ -10,6 +10,7 @@
 alias sudo='sudo '         # leaves a space so aliases can be sudo'ed
 alias :q='exit'
 alias reload='exec zsh'    # refresh the shell after editing dotfiles
+alias rfv='rm -rfv'
 
 # :: navigation ::
 alias ..='cd ..'
