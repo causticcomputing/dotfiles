@@ -1,4 +1,7 @@
 btop
+cockpit-files
+cockpit-machine
+cockpit-podman
 emacs
 fastfetch
 htop
