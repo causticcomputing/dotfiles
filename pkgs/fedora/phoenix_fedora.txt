@@ -4,6 +4,7 @@ cockpit-machine
 cockpit-podman
 emacs
 fastfetch
+git
 htop
 neovim
 s-tui
