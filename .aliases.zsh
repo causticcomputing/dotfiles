@@ -2,7 +2,7 @@
 # ~/.aliases.zsh
 # host: $HOSTNAME
 # Z shell aliases configuration file
-# created <2026-09-24> :: last modified <2026-09-24T14:45-06:00>
+# created <2026-09-24> :: last modified <2026-10-19T23:14-06:00>
 #
 # --- BEGIN CONFIGURATION FILE ---
 
