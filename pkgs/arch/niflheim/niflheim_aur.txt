@@ -1,6 +1,7 @@
 arttime-git
 bottles
 cbonsai
+clock-tui
 dupeguru
 electronmail-bin
 ferdium-bin
