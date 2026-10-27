@@ -160,6 +160,7 @@ smartmontools
 sof-firmware
 solaar
 solanum
+sshfs
 steam
 stellarium
 strace
