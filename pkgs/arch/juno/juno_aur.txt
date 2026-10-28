@@ -19,7 +19,6 @@ qdiskinfo-bin
 rpcs3-bin
 rustdesk-bin
 stremio-enhanced-bin
-streamrip
 ttf-symbola-free
 vesktop-bin
 vscodium-bin
