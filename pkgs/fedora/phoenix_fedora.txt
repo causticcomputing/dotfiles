@@ -1,3 +1,4 @@
+arp-scan
 btop
 cockpit-files
 cockpit-machine
