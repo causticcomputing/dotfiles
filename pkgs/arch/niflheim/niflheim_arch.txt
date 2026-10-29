@@ -34,7 +34,10 @@ fprintd
 freerdp
 fzf
 gamescope
+gdm
 glow
+gnome
+gnome-tweaks
 gnu-free-fonts
 handbrake
 hyfetch
