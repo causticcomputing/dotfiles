@@ -43,6 +43,7 @@ handbrake
 hyfetch
 kdenlive
 keepassxc
+keyd
 krdc
 lazygit
 libosinfo
