@@ -13,7 +13,7 @@ gns3-server
 heroic-games-launcher-bin
 lrcget-bin
 music-presence-bin
-obs-pipewire-audio-capture
+obs-pipewire-audio-capture-bin
 onlyoffice-bin
 qdiskinfo-bin
 rustdesk-bin
