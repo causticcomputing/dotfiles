@@ -16,6 +16,7 @@ music-presence-bin
 obs-pipewire-audio-capture-bin
 onlyoffice-bin
 qdiskinfo-bin
+rate-mirrors-bin
 rustdesk-bin
 stremio-enhanced-bin
 ttf-symbola-free
