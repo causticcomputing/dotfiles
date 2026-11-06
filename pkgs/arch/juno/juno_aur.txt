@@ -4,6 +4,7 @@ cbonsai
 clock-tui
 dupeguru
 electronmail-bin
+epsonscan2
 ferdium-bin
 fluffychat-bin
 gns3-gui
