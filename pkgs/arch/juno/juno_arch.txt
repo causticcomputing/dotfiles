@@ -69,6 +69,7 @@ htop
 hyfetch
 i2c-tools
 ifuse
+ipp-usb
 kdenlive
 keepassxc
 kitty
@@ -155,6 +156,7 @@ scrcpy
 sddm-kcm
 shellcheck
 signal-desktop
+simple-scan
 sl
 smartmontools
 sof-firmware
