@@ -120,6 +120,8 @@ wine
 wireshark-cli
 wireshark-qt
 xmrig
+yabridge
+yabridgectl
 yasm
 yt-dlp
 zenmap
