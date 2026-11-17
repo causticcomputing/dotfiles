@@ -30,6 +30,7 @@ htop
 i2c-tools
 ifuse
 kitty
+ksh
 linux
 linux-firmware
 linux-zen
