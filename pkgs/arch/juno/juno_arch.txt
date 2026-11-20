@@ -202,6 +202,7 @@ vlc
 vlc-plugins-all
 waydroid
 wget
+whipper
 wine
 wireshark-cli
 wireshark-qt
