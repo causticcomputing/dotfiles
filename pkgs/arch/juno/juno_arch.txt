@@ -30,6 +30,7 @@ cockpit-podman
 cockpit-storaged
 cowsay
 cups
+ddrescue
 dnsmasq
 discord
 docker
