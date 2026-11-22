@@ -18,6 +18,7 @@ btrfs-progs
 calf
 calibre
 cantarell-fonts
+cdrtools
 cmatrix
 cmus
 cockpit
